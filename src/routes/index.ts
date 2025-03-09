@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /users:
+ * /api/users:
  *   get:
  *     summary: Retrieve a list of users
  *     responses:
@@ -16,7 +16,7 @@ router.get("/users", getUsers);
 
 /**
  * @swagger
- * /products:
+ * /api/products:
  *   get:
  *     summary: Retrieve a list of products
  *     responses:

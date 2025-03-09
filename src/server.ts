@@ -8,6 +8,10 @@ app.use(express.json());
 setupSwagger(app);
 app.use("/api", router);
 
+app.get("/", (req, res) => {
+    res.send("Express + TypeScript Server is Running!");
+  });
+
 // Export the handler for Vercel
 const PORT = process.env.PORT || 3000;
 
